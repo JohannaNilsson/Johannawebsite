@@ -9,7 +9,7 @@
     width: 400px;
 }
 
-.left {
+.column {
     float: left;
     width: 50%;
     padding: 10px;
@@ -17,12 +17,15 @@
 
 }
 
-.right {
-    float: left;
-    width: 50%;
-    padding: 10px;
-    height: 300px;
-}
+
+@media screen and (max-width: 600px) {
+    .column {
+      width: 100%;
+    }
+    .headshot {
+        width: 200px;
+    }
+  }
 
 .main_h {
     position: fixed;
@@ -160,7 +163,8 @@
   
   .row {
     width: 100%;
-    max-width: 940px;
+    /*max-width: 940px;*/
+    max-width: 1040px;
     margin: 0 auto;
     position: relative;
     padding: 0 2%;
